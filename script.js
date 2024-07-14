@@ -20,6 +20,7 @@ function game(){
            msg.style.textAlign="center";
            msg.style.display="inline";
            msg.style.borderRadius="20px";
+           break;
         } 
         i++;     
      }
@@ -27,5 +28,7 @@ function game(){
    else{
       alert("you are not ready to play this game ");
    }
-
+setTimeout(function() {
+      window.location.reload();
+    }, 2000);
 }
